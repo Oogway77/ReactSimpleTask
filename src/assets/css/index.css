@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+#root {
+  padding: 20px;
+}
+table { border-spacing: 0px; }
+
+table th, 
+table td { 
+  padding: 5px 20px; 
+  border-top: 1px solid #ffffff; 
+}
+
+table th {
+  background-color: #aaaaaa;
+}
+
+table td {
+  background-color: #cccccc;
+  cursor: pointer;
+}
+
+table td img {
+  max-height: 40px;
+}
+
+button { cursor: pointer; }
+
+.detail { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  overflow: auto; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  z-index: 1000; 
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.detail .container { 
+  position: relative; 
+  padding: 20px;
+  max-width: 1260px; 
+  min-width: 1080px; 
+  height: 800px; 
+  background-color: #ffffff; 
+  font-size: 12px; 
+  vertical-align: middle; 
+  white-space: normal; 
+  border-radius: 1px;
+  overflow: auto;
+}
+
+.detail .container table td img {
+  max-height: 300px;
+}
